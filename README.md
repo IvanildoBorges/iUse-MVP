@@ -4,11 +4,9 @@
 ## Descrição do projeto
 O iUse é um sistema inspirado na **Clean Architecture**, que visa organizar o código de forma modular, separando claramente o domínio da aplicação das camadas de serviço e interface. Isso melhora a legibilidade, manutenção e testabilidade.
 
-## Possíveis usos da nossa solução
-O iUse é uma plataforma voltada para a doação, arrecadação e distribuição de materiais escolares em boas condições, tendo como objetivo atender pessoas em situação de vulnerabilidade social. A solução busca facilitar a conexão entre doadores e beneficiários, promovendo o reaproveitamento de recursos educacionais que ainda possuem utilidade.
-No contexto social, a plataforma pode ser utilizada por escolas públicas, ONGs, projetos sociais e instituições comunitárias para organizar e gerenciar campanhas de arrecadação de materiais escolares, como livros, cadernos, mochilas e itens de papelaria. Com isso, é possível garantir que os materiais arrecadados sejam distribuídos de forma mais justa, eficiente e transparente.
-Para indivíduos, o iUse permite que pessoas físicas realizem doações de maneira prática, incentivando a solidariedade e a consciência social. Já para os beneficiários, a plataforma representa uma oportunidade de acesso a materiais escolares essenciais, contribuindo para a permanência e o melhor desempenho no ambiente educacional.
-Dessa forma, mesmo em um cenário hipotético, o iUse demonstra potencial para gerar impacto social positivo, ao unir tecnologia e responsabilidade social na resolução de um problema real enfrentado por muitas comunidades.
+## Seção extensionista
+O iUse é uma plataforma que conecta doadores e beneficiários para a doação e distribuição de materiais escolares em bom estado, com foco em pessoas em situação de vulnerabilidade social. A solução promove o reaproveitamento de recursos educacionais e pode ser utilizada por escolas, ONGs e projetos sociais para organizar campanhas de arrecadação e garantir uma distribuição mais justa e transparente. Além de facilitar doações individuais, a plataforma amplia o acesso a materiais escolares essenciais, contribuindo para a permanência e o desempenho educacional, com potencial de gerar impacto social positivo.
+O projeto físico de banco de dados é a etapa em que transformamos o modelo conceitual (DER) em tabelas reais que podem ser implementadas em um SGBD. É aqui que definimos os tipos de dados, chaves primárias e estrangeiras, índices e restrições de integridade. Essa etapa é fundamental porque mostra como a teoria se conecta à prática: o que antes era apenas um desenho passa a ser código SQL que realmente funciona. Isso ajuda a compreender como os dados são armazenados, consultados e protegidos, além de preparar para o desenvolvimento de sistemas robustos e confiáveis.
 
 ## Estrutura do projeto
 - ```app/domain```: Contém as entidades centrais e as regras de negócio.
@@ -103,7 +101,7 @@ iuse/
 
 - **app/domain/models**: Entidades do negócio (UML), como ```Usuario```, ```Doador```, ```Beneficiario```,  ```Item```, ```Reserva```, ```PontoColeta```, ```Entrega```, ```Retirada``` e ```Impacto```.
 - **app/domain/mixins**: Comportamentos reutilizáveis, como ```AutenticavelMixin```,
-- **app/services**: Regras de aplicação, incluindo **Login/Logout, orquestração de fluxos, validações entre entidades.
+- **app/services**: Regras de aplicação, incluindo **Login/Logout**, orquestração de fluxos, validações entre entidades.
 - **app/interfaces**: Camada de interação com usuário (**CLI** e, no futuro, ```API / Web```)
 
 ## Fluxo de execução
