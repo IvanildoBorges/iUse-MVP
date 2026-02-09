@@ -6,7 +6,13 @@ O iUse é um sistema inspirado na **Clean Architecture**, que visa organizar o c
 
 ## Seção extensionista
 O iUse é uma plataforma que conecta doadores e beneficiários para a doação e distribuição de materiais escolares em bom estado, com foco em pessoas em situação de vulnerabilidade social. A solução promove o reaproveitamento de recursos educacionais e pode ser utilizada por escolas, ONGs e projetos sociais para organizar campanhas de arrecadação e garantir uma distribuição mais justa e transparente. Além de facilitar doações individuais, a plataforma amplia o acesso a materiais escolares essenciais, contribuindo para a permanência e o desempenho educacional, com potencial de gerar impacto social positivo.
-O projeto físico de banco de dados é a etapa em que transformamos o modelo conceitual (DER) em tabelas reais que podem ser implementadas em um SGBD. É aqui que definimos os tipos de dados, chaves primárias e estrangeiras, índices e restrições de integridade. Essa etapa é fundamental porque mostra como a teoria se conecta à prática: o que antes era apenas um desenho passa a ser código SQL que realmente funciona. Isso ajuda a compreender como os dados são armazenados, consultados e protegidos, além de preparar para o desenvolvimento de sistemas robustos e confiáveis.
+
+O projeto físico de banco de dados é a etapa em que transformamos o modelo conceitual (normalmente representado por diagramas, como o DER) em tabelas reais que podem ser criadas e utilizadas em um Sistema de Gerenciamento de Banco de Dados (SGBD), como o PostgreSQL. Nessa fase, definimos como os dados serão armazenados de fato, escolhendo tipos de dados, chaves primárias e estrangeiras, índices e regras de integridade.
+
+Essa etapa é muito importante para quem está aprendendo a programar, porque mostra como a teoria se conecta à prática. O que antes era apenas um desenho passa a ser código SQL que pode ser executado, testado e validado. Isso ajuda a entender melhor como os dados são organizados, protegidos contra inconsistências e acessados de forma eficiente.
+
+Compreender o projeto físico ajuda a desenvolver sistemas mais confiáveis, organizados e escaláveis, além de preparar o profissional para trabalhar com bancos de dados reais, como o iUse, que busca gerar impacto positivo na comunidade.
+
 
 ## Estrutura do projeto
 - ```app/domain```: Contém as entidades centrais e as regras de negócio.
