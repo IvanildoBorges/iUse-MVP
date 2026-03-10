@@ -26,7 +26,9 @@ Para sua construção, definimos algumas etapas:
 
 Seguindo este caminho, podemos conceber o wireframe passando por todas as fases concluindo o processo ligando cada uma das telas e criando o fluxo de navegação que levará o usuário a seu objetivo final.
 
-O *design centrado no usuário (DCU)* traz em sua metodologia, a empatia como principal pilar, no qual o desenvolvedor se coloca no lugar do usuário. Por meio da utilização dessa abordagem, busca democratizar o acesso à tecnologia através da inclusão digital, da redução da carga cognitiva e da responsabilidade ética, diminuindo, assim, as barreiras de entrada para usuários, sejam eles iniciantes ou experientes. Com este princípio em mente, a abordagem deixa de ser apenas técnica e passa a adotar o compromisso social como prioridade, a fim de aproximar as pessoas das soluções.
+O *design centrado no usuário (DCU)* traz em sua metodologia, a empatia como principal pilar, no qual o desenvolvedor se coloca no lugar do usuário. Por meio da utilização dessa abordagem, busca democratizar o acesso à tecnologia através da inclusão digital, da redução da carga cognitiva e da responsabilidade ética, diminuindo, assim, as barreiras de entrada para usuários, sejam eles iniciantes ou experientes.
+
+Com este princípio em mente, a abordagem deixa de ser apenas técnica e passa a adotar o compromisso social como prioridade, a fim de aproximar as pessoas das soluções.
 
 
 ## Estrutura do projeto
