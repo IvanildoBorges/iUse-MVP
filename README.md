@@ -13,7 +13,8 @@ Essa etapa é muito importante para quem está aprendendo a programar, porque mo
 
 Compreender o projeto físico ajuda a desenvolver sistemas mais confiáveis, organizados e escaláveis, além de preparar o profissional para trabalhar com bancos de dados reais, como o iUse, que busca gerar impacto positivo na comunidade.
 
-O *wireframe* é o esqueleto da interface, é o estágio onde definimos a hierarquia das informações e o fluxo de ações do usuário.  Prototipar o wireframe é transpor para a tela os primeiros rascunhos da interface do projeto. Nesta etapa o projeto não ganha cores, mas ganha formas e estrutura. Com o wireframe é possível testar a qualidade da interface e a avaliar o fluxo de ação dos usuários que não estão familiarizados ao protótipo a fim de validar as ações principais da solução proposta.
+O *wireframe* é o esqueleto da interface, é o estágio onde definimos a hierarquia das informações e o fluxo de ações do usuário.  Prototipar o wireframe é transpor para a tela os primeiros rascunhos da interface do projeto. Nesta etapa o projeto não ganha cores, mas ganha formas e estrutura. 
+Com o wireframe é possível testar a qualidade da interface e a avaliar o fluxo de ação dos usuários que não estão familiarizados ao protótipo a fim de validar as ações principais da solução proposta.
 
 Para sua construção, definimos algumas etapas:
 
