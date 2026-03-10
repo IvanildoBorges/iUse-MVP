@@ -13,6 +13,19 @@ Essa etapa é muito importante para quem está aprendendo a programar, porque mo
 
 Compreender o projeto físico ajuda a desenvolver sistemas mais confiáveis, organizados e escaláveis, além de preparar o profissional para trabalhar com bancos de dados reais, como o iUse, que busca gerar impacto positivo na comunidade.
 
+O *wireframe* é o esqueleto da interface, é o estágio onde definimos a hierarquia das informações e o fluxo de ações do usuário.  Prototipar o wireframe é transpor para a tela os primeiros rascunhos da interface do projeto. Nesta etapa o projeto não ganha cores, mas ganha formas e estrutura. Com o wireframe é possível testar a qualidade da interface e a avaliar o fluxo de ação dos usuários que não estão familiarizados ao protótipo a fim de validar as ações principais da solução proposta.
+
+Para sua construção, definimos algumas etapas:
+-Mapear o conjunto de telas principais
+-Escolher a ferramenta de prototipagem (aqui o Figma foi escolhido)
+-Organizar a hierarquia visual de cada tela
+-Padronizar os componentes
+-Estabelecer um fluxo de navegação
+
+Seguindo este caminho, podemos conceber o wireframe passando por todas as fases concluindo o processo ligando cada uma das telas e criando o fluxo de navegação que levará o usuário a seu objetivo final.
+
+O *design centrado no usuário (DCU)* traz em sua metodologia, a empatia como principal pilar, no qual o desenvolvedor se coloca no lugar do usuário. Por meio da utilização dessa abordagem, busca democratizar o acesso à tecnologia através da inclusão digital, da redução da carga cognitiva e da responsabilidade ética, diminuindo, assim, as barreiras de entrada para usuários, sejam eles iniciantes ou experientes. Com este princípio em mente, a abordagem deixa de ser apenas técnica e passa a adotar o compromisso social como prioridade, a fim de aproximar as pessoas das soluções.
+
 
 ## Estrutura do projeto
 - ```app/domain```: Contém as entidades centrais e as regras de negócio.
