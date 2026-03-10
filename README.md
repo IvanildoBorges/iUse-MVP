@@ -16,10 +16,15 @@ Compreender o projeto físico ajuda a desenvolver sistemas mais confiáveis, org
 O *wireframe* é o esqueleto da interface, é o estágio onde definimos a hierarquia das informações e o fluxo de ações do usuário.  Prototipar o wireframe é transpor para a tela os primeiros rascunhos da interface do projeto. Nesta etapa o projeto não ganha cores, mas ganha formas e estrutura. Com o wireframe é possível testar a qualidade da interface e a avaliar o fluxo de ação dos usuários que não estão familiarizados ao protótipo a fim de validar as ações principais da solução proposta.
 
 Para sua construção, definimos algumas etapas:
+
 -Mapear o conjunto de telas principais
+
 -Escolher a ferramenta de prototipagem (aqui o Figma foi escolhido)
+
 -Organizar a hierarquia visual de cada tela
+
 -Padronizar os componentes
+
 -Estabelecer um fluxo de navegação
 
 Seguindo este caminho, podemos conceber o wireframe passando por todas as fases concluindo o processo ligando cada uma das telas e criando o fluxo de navegação que levará o usuário a seu objetivo final.
