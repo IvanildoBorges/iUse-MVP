@@ -18,13 +18,9 @@ O *wireframe* é o esqueleto da interface, é o estágio onde definimos a hierar
 Para sua construção, definimos algumas etapas:
 
 -Mapear o conjunto de telas principais
-
 -Escolher a ferramenta de prototipagem (aqui o Figma foi escolhido)
-
 -Organizar a hierarquia visual de cada tela
-
 -Padronizar os componentes
-
 -Estabelecer um fluxo de navegação
 
 Seguindo este caminho, podemos conceber o wireframe passando por todas as fases concluindo o processo ligando cada uma das telas e criando o fluxo de navegação que levará o usuário a seu objetivo final.
