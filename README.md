@@ -1,6 +1,7 @@
 # Sistema iUse
 *A educação que circula entre todos*
-<img src="docs/imagens/capa.png" width="300"/>
+
+<img src="docs/imagens/capa.png"/>
 
 ## Descrição do projeto
 O iUse é um sistema inspirado na **Clean Architecture**, que visa organizar o código de forma modular, separando claramente o domínio da aplicação das camadas de serviço e interface. Isso melhora a legibilidade, manutenção e testabilidade.
