@@ -148,8 +148,6 @@ Aqui estão algumas imagens que ilustram a execução do código.
 <img src="docs/imagens/testes.jpg" width="300"/>
 
 ## Time do Projeto
-
-- **Brenna Isabelly de Oliveira** – Facilitadora
-- **Cícero Danilo do Nascimento Pereira** – Responsável pela implementação de **Retirada** e **Impacto**
-- **Cícero Ivanildo Borges Alves** – Responsável pelas classes **Usuário**, **Beneficiário**, **Doador** e **Item**
-- **Yan Brasil Angelim de Brito** – Responsável por **Ponto de Coleta**, **Entrega** e **Reserva**
+- **Cicero Ivanildo Borges Alves** – Facilitador, Scrum Master, Product Owner, UX/UI Designer, Redator Geral e Desenvolvedor.
+- **Maria Fernanda Sousa Silva** – Redatora, UI Designer e Desenvolvedora.
+- **Yan Brasil Angelim de Brito** – Redator, UI Designer e Desenvolvedor.
