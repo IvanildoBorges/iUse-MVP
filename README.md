@@ -3,24 +3,22 @@
 
 <img src="docs/imagens/capa.png"/>
 
+## Time do Projeto
+- **Cicero Ivanildo Borges Alves** – Facilitador, Scrum Master, Product Owner, UX/UI Designer, Redator Geral e Desenvolvedor.
+- **Maria Fernanda Sousa Silva** – Redatora, UI Designer e Desenvolvedora.
+- **Yan Brasil Angelim de Brito** – Redator, UI Designer e Desenvolvedor.
+
 ## Descrição do projeto
 O iUse é um sistema inspirado na **Clean Architecture**, que visa organizar o código de forma modular, separando claramente o domínio da aplicação das camadas de serviço e interface. Isso melhora a legibilidade, manutenção e testabilidade.
 
 ## Seção extensionista
 O iUse é uma plataforma que conecta doadores e beneficiários para a doação e distribuição de materiais escolares em bom estado, com foco em pessoas em situação de vulnerabilidade social. A solução promove o reaproveitamento de recursos educacionais e pode ser utilizada por escolas, ONGs e projetos sociais para organizar campanhas de arrecadação e garantir uma distribuição mais justa e transparente. Além de facilitar doações individuais, a plataforma amplia o acesso a materiais escolares essenciais, contribuindo para a permanência e o desempenho educacional, com potencial de gerar impacto social positivo.
 
-O projeto físico de banco de dados é a etapa em que transformamos o modelo conceitual (normalmente representado por diagramas, como o DER) em tabelas reais que podem ser criadas e utilizadas em um Sistema de Gerenciamento de Banco de Dados (SGBD), como o PostgreSQL. Nessa fase, definimos como os dados serão armazenados de fato, escolhendo tipos de dados, chaves primárias e estrangeiras, índices e regras de integridade.
+O projeto físico de banco de dados é a etapa em que transformamos o modelo conceitual (normalmente representado por diagramas, como o DER) em tabelas reais que podem ser criadas e utilizadas em um Sistema de Gerenciamento de Banco de Dados (SGBD), como o PostgreSQL. Nessa fase, definimos como os dados serão armazenados de fato, escolhendo tipos de dados, chaves primárias e estrangeiras, índices e regras de integridade. Essa etapa é muito importante para quem está aprendendo a programar, porque mostra como a teoria se conecta à prática. O que antes era apenas um desenho passa a ser código SQL que pode ser executado, testado e validado. Isso ajuda a entender melhor como os dados são organizados, protegidos contra inconsistências e acessados de forma eficiente. Compreender o projeto físico ajuda a desenvolver sistemas mais confiáveis, organizados e escaláveis, além de preparar o profissional para trabalhar com bancos de dados reais, como o iUse, que busca gerar impacto positivo na comunidade.
 
-Essa etapa é muito importante para quem está aprendendo a programar, porque mostra como a teoria se conecta à prática. O que antes era apenas um desenho passa a ser código SQL que pode ser executado, testado e validado. Isso ajuda a entender melhor como os dados são organizados, protegidos contra inconsistências e acessados de forma eficiente.
+O *wireframe* atua como o esqueleto da interface, definindo a hierarquia de informações e o fluxo de ações antes da aplicação visual. Sua construção segue um processo estruturado: mapeamento das telas do MVP, seleção da ferramenta (Figma), organização da hierarquia visual, padronização de componentes e estabelecimento do fluxo de navegação. Essa etapa é crucial para validar a qualidade da interface com usuários não familiarizados, reduzindo a carga cognitiva e o tempo de aprendizado. O *design centrado no usuário (DCU)* traz em sua metodologia, a empatia como principal pilar, no qual o desenvolvedor se coloca no lugar do usuário. Por meio da utilização dessa abordagem, busca democratizar o acesso à tecnologia através da inclusão digital, da redução da carga cognitiva e da responsabilidade ética, diminuindo, assim, as barreiras de entrada para usuários, sejam eles iniciantes ou experientes.
 
-Compreender o projeto físico ajuda a desenvolver sistemas mais confiáveis, organizados e escaláveis, além de preparar o profissional para trabalhar com bancos de dados reais, como o iUse, que busca gerar impacto positivo na comunidade.
-
-O *wireframe* atua como o esqueleto da interface, definindo a hierarquia de informações e o fluxo de ações antes da aplicação visual. Sua construção segue um processo estruturado: mapeamento das telas do MVP, seleção da ferramenta (Figma), organização da hierarquia visual, padronização de componentes e estabelecimento do fluxo de navegação. Essa etapa é crucial para validar a qualidade da interface com usuários não familiarizados, reduzindo a carga cognitiva e o tempo de aprendizado.
-
-O *design centrado no usuário (DCU)* traz em sua metodologia, a empatia como principal pilar, no qual o desenvolvedor se coloca no lugar do usuário. Por meio da utilização dessa abordagem, busca democratizar o acesso à tecnologia através da inclusão digital, da redução da carga cognitiva e da responsabilidade ética, diminuindo, assim, as barreiras de entrada para usuários, sejam eles iniciantes ou experientes.
-
-Com este princípio em mente, a abordagem deixa de ser apenas técnica e passa a adotar o compromisso social como prioridade, a fim de aproximar as pessoas das soluções.
-
+O funcionamento do sistema é simples: o doador cadastra um item informando categoria, estado de conservação e seleção do ponto de coleta (local de entrega). O beneficiário pesquisa o material disponível, realiza a reserva e recebe orientações para retirada em um ponto de coleta. Após a entrega, o sistema atualiza automaticamente o status do item e registra dados de impacto social e ecológico. Combinando arquitetura modular, usabilidade e impacto social, o iUse transforma a tecnologia em uma ferramenta prática de apoio à educação, inclusão social e reaproveitamento sustentável de recursos. Com este princípio em mente, a abordagem deixa de ser apenas técnica e passa a adotar o compromisso social como prioridade, a fim de aproximar as pessoas das soluções.
 
 ## Estrutura do projeto
 - ```app/domain```: Contém as entidades centrais e as regras de negócio.
@@ -146,8 +144,3 @@ Aqui estão algumas imagens que ilustram a execução do código.
 
 <img src="docs/imagens/testes_da_parte_de_ivanildo.png" width="300"/>
 <img src="docs/imagens/testes.jpg" width="300"/>
-
-## Time do Projeto
-- **Cicero Ivanildo Borges Alves** – Facilitador, Scrum Master, Product Owner, UX/UI Designer, Redator Geral e Desenvolvedor.
-- **Maria Fernanda Sousa Silva** – Redatora, UI Designer e Desenvolvedora.
-- **Yan Brasil Angelim de Brito** – Redator, UI Designer e Desenvolvedor.
