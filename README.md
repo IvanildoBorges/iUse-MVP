@@ -20,6 +20,11 @@ O *wireframe* atua como o esqueleto da interface, definindo a hierarquia de info
 
 O funcionamento do sistema é simples: o doador cadastra um item informando categoria, estado de conservação e seleção do ponto de coleta (local de entrega). O beneficiário pesquisa o material disponível, realiza a reserva e recebe orientações para retirada em um ponto de coleta. Após a entrega, o sistema atualiza automaticamente o status do item e registra dados de impacto social e ecológico. Combinando arquitetura modular, usabilidade e impacto social, o iUse transforma a tecnologia em uma ferramenta prática de apoio à educação, inclusão social e reaproveitamento sustentável de recursos. Com este princípio em mente, a abordagem deixa de ser apenas técnica e passa a adotar o compromisso social como prioridade, a fim de aproximar as pessoas das soluções.
 
+## Protótipos
+Como demostração, aqui estão os dois protótipos navegáveis Figma do MVP: 
+- [Mobile](https://www.figma.com/proto/9jqNWlc8OfKkiuAOGsiUQE/iUse?node-id=92-569&p=f&t=m6rzASS8Kh4UNTcv-1&scaling=scale-down&content-scaling=fixed&page-id=82%3A2&starting-point-node-id=92%3A569)
+- [Desktop](https://www.figma.com/proto/9jqNWlc8OfKkiuAOGsiUQE/iUse?node-id=300-1240&p=f&t=fZ0MNb7164nYwL2X-1&scaling=scale-down&content-scaling=fixed&page-id=300%3A1239&starting-point-node-id=300%3A1240)
+
 ## Estrutura do projeto
 - ```app/domain```: Contém as entidades centrais e as regras de negócio.
 - ```app/services```: Serviços de aplicação, como autenticação e orquestração de fluxos.
