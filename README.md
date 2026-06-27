@@ -25,7 +25,9 @@ O *wireframe* atua como o esqueleto da interface, definindo a hierarquia de info
 O funcionamento do sistema é simples: o doador cadastra um item informando categoria, estado de conservação e seleção do ponto de coleta (local de entrega). O beneficiário pesquisa o material disponível, realiza a reserva e recebe orientações para retirada em um ponto de coleta. Após a entrega, o sistema atualiza automaticamente o status do item e registra dados de impacto social e ecológico. Combinando arquitetura modular, usabilidade e impacto social, o iUse transforma a tecnologia em uma ferramenta prática de apoio à educação, inclusão social e reaproveitamento sustentável de recursos. Com este princípio em mente, a abordagem deixa de ser apenas técnica e passa a adotar o compromisso social como prioridade, a fim de aproximar as pessoas das soluções.
 
 ### 5. O que é Arquitetura de Software?
-Lorem ipsum...
+
+A arquitetura de software corresponde à forma como um sistema é organizado, definindo seus componentes, responsabilidades e a comunicação entre eles. Sua importância está em reduzir a complexidade do desenvolvimento e criar uma base que favoreça escalabilidade, segurança, desempenho, manutenção e evolução do software. No iUse, essas preocupações orientaram a adoção da Clean Architecture, com separação entre regras de negócio e apresentação e organização em camadas de domínio, serviços, interfaces e utilitários. O projeto também aplica o Princípio da Responsabilidade Única (SRP) e o encapsulamento, promovendo baixo acoplamento, maior organização e proteção das informações. Além disso, utiliza a normalização até a Terceira Forma Normal (3FN) para garantir a consistência dos dados, a estratégia Mobile-First para ampliar a acessibilidade em dispositivos móveis e testes automatizados com pytest para aumentar a confiabilidade da aplicação. Dessa forma, a arquitetura do iUse estabelece uma estrutura modular, testável e preparada para futuras evoluções, alinhada ao propósito de promover inclusão social e ampliar o acesso a materiais escolares por meio da tecnologia.
+
 
 ## Protótipos
 Como demostração, aqui estão os dois protótipos navegáveis Figma do MVP: 
