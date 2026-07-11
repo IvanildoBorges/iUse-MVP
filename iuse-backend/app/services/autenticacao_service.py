@@ -1,6 +1,6 @@
-from app.domain.models.Usuario import Usuario
-from app.domain.models.Doador import Doador
-from app.domain.models.Beneficiario import Beneficiario
+from backend.app.domain.models.Usuario import Usuario
+from backend.app.domain.models.Doador import Doador
+from backend.app.domain.models.Beneficiario import Beneficiario
 
 class AutenticacaoService:
     @staticmethod

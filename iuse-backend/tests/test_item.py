@@ -1,9 +1,9 @@
 import pytest
 from datetime import datetime, UTC
-from app.domain.models.Item import Item
-from app.domain.enums.tipo_item import TipoItem
-from app.domain.enums.estado_conservacao import EstadoConservacao
-from app.domain.enums.disponibilidade import Disponibilidade
+from backend.app.domain.models.Item import Item
+from backend.app.domain.enums.tipo_item import TipoItem
+from backend.app.domain.enums.estado_conservacao import EstadoConservacao
+from backend.app.domain.enums.disponibilidade import Disponibilidade
 
 # ========= FIXTURES =========
 @pytest.fixture

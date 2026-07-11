@@ -1,4 +1,4 @@
-from app.domain.models.Usuario import Usuario
+from backend.app.domain.models.Usuario import Usuario
 
 class Beneficiario(Usuario):
     def __init__(self, nome: str, email: str, senha: str):

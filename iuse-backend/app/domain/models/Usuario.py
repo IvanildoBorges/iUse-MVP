@@ -1,8 +1,8 @@
 from datetime import datetime, UTC
 from uuid import uuid4
 import hashlib
-from app.utils.validadores import (validar_email, validar_nome, validar_uuid)
-from app.domain.mixins.autenticavel_mixin import AutenticavelMixin
+from backend.app.utils.validadores import (validar_email, validar_nome, validar_uuid)
+from backend.app.domain.mixins.autenticavel_mixin import AutenticavelMixin
 
 class Usuario(AutenticavelMixin):
     def __init__(self, nome: str, email: str, senha: str, id: str | None = None, criado_em: datetime | None = None):

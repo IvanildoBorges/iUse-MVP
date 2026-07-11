@@ -1,5 +1,5 @@
-from app.domain.models.Usuario import Usuario
-from app.utils.validadores import avaliar_estrelas
+from backend.app.domain.models.Usuario import Usuario
+from backend.app.utils.validadores import avaliar_estrelas
 
 class Doador(Usuario):
     def __init__(self, nome: str, email: str, senha: str, reputacao: float = 0.0):

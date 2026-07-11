@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>iUse</title>
+    <link rel="stylesheet" href="./src/styles/global.css">
+
+    <!-- Base SEO -->
+    <meta name="description" content="iUse: A educação que circula entre todos. O iUse é uma plataforma que conecta doadores e beneficiários para a doação e distribuição de materiais escolares em bom estado, com foco em pessoas em situação de vulnerabilidade social." />
+    <meta name="keywords" content="iUse, educação, doação, materiais escolares, vulnerabilidade social" />
+
+    <!-- PWA -->
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#130CED">
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <div class="logo-header">
+            <img src="./src/assets/logotipo.png" alt="logotipo" class="logotipo">
+            <h1>iUse</h1>
+        </div>
+        <nav class="nav-header">
+            <ul>
+                <li><a href="index.html" class="active">Início</a></li>
+                <li><a href="./src/pages/acervo.html">Acervo</a></li>
+                <li><a href="./src/pages/minhas-reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+        <div class="actions-header">
+            <button class="btn-icon" aria-label="Buscar item">
+                <img src="./src/assets/search.png" alt="Buscar item">
+            </button>
+            <button class="btn-icon" aria-label="Notificações">
+                <img src="./src/assets/notifications.png" alt="Notificações">
+            </button>
+            <button class="btn-icon" aria-label="Avatar">
+                <img src="./src/assets/avatar.png" alt="Avatar">
+            </button>
+        </div>
+    </header>
+    <main>
+        <section class="carousel">
+            <div class="carousel-container">
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1483546416237-76fd26bbcdd1?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagem do carrossel 1">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1531346878377-a5be20888e57?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagem do carrossel 2">
+                </div>
+                <div class="carousel-slide">
+                    <img src="https://images.unsplash.com/photo-1651761409007-0395097c269d?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Imagem do carrossel 3">
+                </div>
+            </div>
+            <div class="indicators">
+                <span class="indicator active" data-slide="0"></span>
+                <span class="indicator" data-slide="1"></span>
+                <span class="indicator" data-slide="2"></span>
+            </div>
+        </section>
+    </main>
+    <section class="actions-section fast-access">
+        <div class="title-container-section">
+            <h2 class="title-section">Ações rápidas</h2>
+        </div>
+        <div class="actions-container-section">
+            <div class="card-icon">
+                <div class="img-container">
+                    <img src="./src/assets/gps.png" alt="Ponto de coleta">
+                </div>
+                <span class="text-card-icon">Ponto de coleta</span>
+            </div>
+            <div class="card-icon">
+                <div class="img-container">
+                    <img src="./src/assets/box.png" alt="Doar material">
+                </div>
+                <span class="text-card-icon">Doar material</span>
+            </div>
+            <div class="card-icon">
+                <div class="img-container">
+                    <img src="./src/assets/search.png" alt="Buscar material">
+                </div>
+                <span class="text-card-icon">Buscar material</span>
+            </div>
+        </div>
+    </section>
+    <section class="actions section recently-added">
+        <div class="title-container-section">
+            <h2 class="title-section">Recém adicionados</h2>
+            <a href="#" class="see-more-items">Ver mais</a>
+        </div>
+        <div class="actions-container-section">
+            <div class="card-item">
+                <div class="info-container">
+                    <img src="https://images.unsplash.com/photo-1581431886211-6b932f8367f2?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Item 1">
+                    <span class="text-card-item">Item 1</span>
+                </div>
+                <button 
+                    class="btn-reserve-item" 
+                    aria-label="Reservar item"
+                >
+                    Reservar item
+                </button>
+            </div>
+            <div class="card-item">
+                <div class="info-container">
+                    <img src="https://images.unsplash.com/photo-1581431886211-6b932f8367f2?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Item 2">
+                    <span class="text-card-item">Item 2</span>
+                </div>
+                <button 
+                    class="btn-reserve-item" 
+                    aria-label="Reservar item"
+                >
+                    Reservar item
+                </button>
+            </div>
+            <div class="card-item">
+                <div class="info-container">
+                    <img src="https://images.unsplash.com/photo-1581431886211-6b932f8367f2?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Item 3">
+                    <span class="text-card-item">Item 3</span>
+                </div>
+                <button 
+                    class="btn-reserve-item" 
+                    aria-label="Reservar item"
+                >
+                    Reservar item
+                </button>
+            </div>
+            <div class="card-item">
+                <div class="info-container">
+                    <img src="https://images.unsplash.com/photo-1581431886211-6b932f8367f2?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Item 4">
+                    <span class="text-card-item">Item 4</span>
+                </div>
+                <button 
+                    class="btn-reserve-item" 
+                    aria-label="Reservar item"
+                >
+                    Reservar item
+                </button>
+            </div>
+            <div class="card-item">
+                <div class="info-container">
+                    <img src="https://images.unsplash.com/photo-1581431886211-6b932f8367f2?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Item 5">
+                    <span class="text-card-item">Item 5</span>
+                </div>
+                <button 
+                    class="btn-reserve-item" 
+                    aria-label="Reservar item"
+                >
+                    Reservar item
+                </button>
+            </div>
+            <div class="card-item">
+                <div class="info-container">
+                    <img src="https://images.unsplash.com/photo-1581431886211-6b932f8367f2?q=80&w=720&auto=format&fit=crop&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D" alt="Item 6">
+                    <span class="text-card-item">Item 6</span>
+                </div>
+                <button 
+                    class="btn-reserve-item" 
+                    aria-label="Reservar item"
+                >
+                    Reservar item
+                </button>
+            </div>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <div class="logo-footer">
+                <img src="./src/assets/logotipo.png" alt="logotipo"  class="logotipo">
+                <h1>iUse</h1>
+            </div>
+            <nav class="nav-footer">
+                <ul>
+                    <li><a href="index.html">Início</a></li>
+                    <li><a href="./src/pages/acervo.html">Acervo</a></li>
+                    <li><a href="./src/pages/minhas-reservas.html">Reservas</a></li>
+                </ul>
+            </nav>
+            <div class="copyright-footer">
+                <p>&copy; 2026 iUse. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/scripts/script.js" type="module"></script>
+</body>
+</html>

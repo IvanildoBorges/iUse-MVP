@@ -109,7 +109,7 @@ pytest -v
 
 ## Estrutura de pastas
 ```bash
-iuse/
+iuse-backend/
 ├── main.py
 ├── app/
 │   ├── domain/
@@ -118,8 +118,6 @@ iuse/
 │   ├── services/
 │   ├── utils/
 │   └── interfaces/
-├── docs/
-│   └── imagens/
 └── tests/
 ```
 

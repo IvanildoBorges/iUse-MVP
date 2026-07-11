@@ -1,9 +1,9 @@
 from datetime import datetime, UTC
 from uuid import uuid4
-from app.utils.validadores import validar_uuid
-from app.domain.enums.tipo_item import TipoItem
-from app.domain.enums.estado_conservacao import EstadoConservacao
-from app.domain.enums.disponibilidade import Disponibilidade
+from backend.app.utils.validadores import validar_uuid
+from backend.app.domain.enums.tipo_item import TipoItem
+from backend.app.domain.enums.estado_conservacao import EstadoConservacao
+from backend.app.domain.enums.disponibilidade import Disponibilidade
 
 class Item:
     def __init__(
