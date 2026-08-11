@@ -1,0 +1,137 @@
+/* =========================================
+   SEÇÕES GERAIS
+   ========================================= */
+section {
+    padding: 0 20px;
+    margin-bottom: 30px;
+}
+
+.title-container-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 16px;
+}
+
+.title-section {
+    font-size: 1.25rem;
+    font-weight: 700;
+}
+
+.see-more-items {
+    color: var(--primary-blue);
+    font-weight: 600;
+    font-size: 0.9rem;
+}
+
+/* Ações Rápidas */
+.fast-access .actions-container-section {
+    display: flex;
+    gap: 15px;
+}
+
+.card-icon {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+    text-align: center;
+}
+
+.card-icon .img-container {
+    background-color: var(--gray-light);
+    width: 100%;
+    aspect-ratio: 1.5;
+    border-radius: 12px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.card-icon .img-container img {
+    width: 28px;
+    height: 28px;
+}
+
+.text-card-icon {
+    font-size: 0.75rem;
+    font-weight: 600;
+}
+
+/* Recém Adicionados */
+.recently-added .actions-container-section {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 16px;
+}
+
+.card-item {
+    border: 1px solid var(--gray-medium);
+    border-radius: 12px;
+    padding: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+
+.card-item .info-container {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+    margin-bottom: 12px;
+}
+
+.card-item .info-container img {
+    aspect-ratio: 1;
+    object-fit: cover;
+    border-radius: 8px;
+    background-color: var(--gray-light);
+}
+
+.text-card-item {
+    font-size: 0.85rem;
+    font-weight: 600;
+}
+
+.btn-reserve-item {
+    background-color: var(--primary-blue);
+    color: #fff;
+    border: none;
+    padding: 12px;
+    border-radius: 8px;
+    font-weight: 700;
+    cursor: pointer;
+    width: 100%;
+    transition: background-color 0.2s;
+}
+
+.btn-reserve-item:hover {
+    background-color: #0d09b5;
+}
+
+/* =========================================
+   MEDIA QUERY - TABLETS E DESKTOPS
+   ========================================= */
+@media (min-width: 768px) {
+    section {
+        padding: 0 5%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .fast-access .actions-container-section {
+        justify-content: flex-start;
+        gap: 30px;
+    }
+
+    .card-icon {
+        flex: 0 1 180px;
+    }
+
+    .recently-added .actions-container-section {
+        grid-template-columns: repeat(6, 1fr);
+        gap: 20px;
+    }
+}
