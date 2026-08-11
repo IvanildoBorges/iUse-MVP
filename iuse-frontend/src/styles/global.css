@@ -108,6 +108,10 @@ section {
    MEDIA QUERY - TABLETS E DESKTOPS
    ========================================= */
 @media (min-width: 768px) {
+    body {
+        padding-bottom: 0;
+    }
+
     section {
         margin: 4rem 5%;
         max-width: 1200px;
