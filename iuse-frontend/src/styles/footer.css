@@ -6,13 +6,13 @@ footer {
     bottom: 0;
     left: 0;
     width: 100%;
-    background-color: #fff;
-    border-top: 1px solid var(--gray-medium);
+    background-color: var(--bg-color);
+    border-top: 1px solid var(--gray-200);
     z-index: 1000;
 }
 
-.footer-container {
-    padding: 12px 0;
+footer .footer-container {
+    padding: 0.875rem 1.5rem;
 }
 
 .logo-footer, .copyright-footer {
@@ -29,7 +29,7 @@ footer {
     flex-direction: column;
     align-items: center;
     font-size: 0.75rem;
-    color: #666;
+    color: var(--gray-600);
     font-weight: 600;
 }
 
@@ -43,8 +43,12 @@ footer {
     border-radius: 4px;
 }
 
-.nav-footer a:hover, .nav-footer a:active {
-    color: var(--primary-blue);
+.nav-footer a:hover, .nav-footer a.active {
+    color: var(--primary-color);
+}
+
+.nav-footer a.active {
+    font-weight: 700;
 }
 
 /* =========================================
