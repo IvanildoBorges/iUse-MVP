@@ -1,137 +1,122 @@
-/* =========================================
-   SEÇÕES GERAIS
-   ========================================= */
-section {
-    padding: 0 20px;
-    margin-bottom: 30px;
-}
-
-.title-container-section {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    margin-bottom: 16px;
-}
-
-.title-section {
-    font-size: 1.25rem;
-    font-weight: 700;
-}
-
-.see-more-items {
-    color: var(--primary-blue);
-    font-weight: 600;
-    font-size: 0.9rem;
-}
-
 /* Ações Rápidas */
 .fast-access .actions-container-section {
     display: flex;
-    gap: 15px;
+    gap: 1rem;
 }
 
-.card-icon {
+.fast-access .actions-container-section .card-icon {
     flex: 1;
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 10px;
+    gap: .5rem;
     text-align: center;
 }
 
-.card-icon .img-container {
-    background-color: var(--gray-light);
+.fast-access .actions-container-section .card-icon .img-container {
+    background-color: var(--gray-100);
     width: 100%;
     aspect-ratio: 1.5;
-    border-radius: 12px;
+    border-radius: .75rem;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
-.card-icon .img-container img {
-    width: 28px;
-    height: 28px;
+.fast-access .actions-container-section .card-icon .img-container img {
+    width: 1.5rem;
+    height: 1.5rem;
+    object-fit: contain;
 }
 
-.text-card-icon {
-    font-size: 0.75rem;
-    font-weight: 600;
+.fast-access .actions-container-section .text-card-icon {
+    font-size: 0.625rem;
+    font-weight: 700;
 }
 
 /* Recém Adicionados */
 .recently-added .actions-container-section {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
-    gap: 16px;
+    gap: 1rem;
 }
 
-.card-item {
-    border: 1px solid var(--gray-medium);
-    border-radius: 12px;
-    padding: 12px;
+.recently-added .actions-container-section .card-item {
+    border: 1px solid var(--gray-300);
+    border-radius: 0.75rem;
+    padding: 0.75rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    gap: 0.75rem;
 }
 
-.card-item .info-container {
+.recently-added .actions-container-section .card-item .info-container {
     display: flex;
     flex-direction: column;
-    gap: 12px;
-    margin-bottom: 12px;
+    gap: .5rem;
 }
 
-.card-item .info-container img {
+.recently-added .actions-container-section .card-item .info-container img {
     aspect-ratio: 1;
     object-fit: cover;
-    border-radius: 8px;
-    background-color: var(--gray-light);
+    border-radius: 0.5rem;
+    background-color: var(--gray-100);
 }
 
-.text-card-item {
-    font-size: 0.85rem;
-    font-weight: 600;
+.recently-added .actions-container-section .card-item .info-container .text-card-item {
+    text-transform: capitalize;
+    font-size: 0.875rem;
 }
 
-.btn-reserve-item {
-    background-color: var(--primary-blue);
-    color: #fff;
-    border: none;
-    padding: 12px;
-    border-radius: 8px;
+.recently-added .actions-container-section .card-item .btn-reserve-item {
+    background-color: var(--primary-color);
+    border: 1px solid var(--primary-color);
+    color: var(--white);
+    padding: 0.5rem 0.75rem;
+    border-radius: 0.5rem;
     font-weight: 700;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     cursor: pointer;
     width: 100%;
-    transition: background-color 0.2s;
+    transition: all 0.2s ease-in-out;
+    font-size: 0.75rem;
+    font-weight: 700;
 }
 
-.btn-reserve-item:hover {
-    background-color: #0d09b5;
+.recently-added .actions-container-section .card-item .btn-reserve-item:hover {
+    background-color: var(--hover-primary-color);
 }
 
 /* =========================================
    MEDIA QUERY - TABLETS E DESKTOPS
    ========================================= */
 @media (min-width: 768px) {
-    section {
-        padding: 0 5%;
-        max-width: 1200px;
-        margin-left: auto;
-        margin-right: auto;
+    .fast-access .actions-container-section .card-icon {
+        flex: 0 1 6.625rem;
     }
 
-    .fast-access .actions-container-section {
-        justify-content: flex-start;
-        gap: 30px;
-    }
-
-    .card-icon {
-        flex: 0 1 180px;
+    .fast-access .actions-container-section .text-card-icon {
+        font-size: 0.75rem;
+        font-weight: 600;
     }
 
     .recently-added .actions-container-section {
         grid-template-columns: repeat(6, 1fr);
-        gap: 20px;
+        gap: 1.5rem;
+    }
+
+    .recently-added .actions-container-section .card-item .info-container img {
+        border-radius: 0.75rem;
+    }
+
+    .recently-added .actions-container-section .card-item .info-container .text-card-item {
+        font-size: 1rem;
+    }
+
+    .recently-added .actions-container-section .card-item .btn-reserve-item {
+        padding: 0.75rem;
+        font-size: 0.875rem;
     }
 }

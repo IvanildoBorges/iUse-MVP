@@ -33,15 +33,22 @@ html {
     /* Ação e Destaque */
     --primary-color: #130CED;
     --secundary-color: #7B2CBF;
+    --hover-primary-color: #0d09b5;
     --sucess-color: #00922C;
     --error-color: #E40040;
     --bg-color: var(--white);
 }
 
-body {
-    font-family: 'Nunito Sans', sans-serif; 
+body,
+button,
+input,
+textarea {
+    font-family: 'Nunito Sans', sans-serif;
     font-optical-sizing: auto;
     font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+body {
     background-color: var(--bg-color);
     color: var(--gray-700);
     width: 100vw;
@@ -70,4 +77,49 @@ img {
     user-select: none;
     width: 1.5rem;
     height: 1.5rem;
+}
+
+section {
+    margin: 2rem 1rem;
+    display: flex;
+    flex-direction: column;
+    gap: .75rem;
+}
+
+.title-container-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.title-section {
+    font-size: 1.125rem;
+    font-weight: 700;
+}
+
+.see-more-items {
+    color: var(--primary-color);
+    font-weight: 700;
+    font-size: 0.875rem;
+}
+
+/* =========================================
+   MEDIA QUERY - TABLETS E DESKTOPS
+   ========================================= */
+@media (min-width: 768px) {
+    section {
+        margin: 4rem 5%;
+        max-width: 1200px;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 1rem;
+    }
+
+    .title-section {
+        font-size: 1.25rem;
+    }
+
+    .see-more-items {
+        font-size: 1rem;
+    }
 }
