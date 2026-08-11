@@ -5,76 +5,76 @@ main {
     margin: 0 1rem;
 }
 
-.carousel {
-    background: linear-gradient(135deg, #5c258d, #4389a2);
-    border-radius: 16px;
-    padding: 20px;
+main .carousel {
     position: relative;
     overflow: hidden;
-    margin-bottom: 24px;
 }
 
-.carousel-container {
+main .carousel .carousel-container {
     display: flex;
     overflow-x: auto;
     scroll-snap-type: x mandatory;
-    gap: 20px;
+    gap: 1rem;
     scrollbar-width: none;
+    border-radius: 1rem;
 }
 
-.carousel-container::-webkit-scrollbar {
+main .carousel .carousel-container::-webkit-scrollbar {
     display: none;
 }
 
-.carousel-slide {
+main .carousel .carousel-container .carousel-slide {
     flex: 0 0 100%;
     scroll-snap-align: center;
-    border-radius: 12px;
     overflow: hidden;
+    border-radius: 1rem;
 }
 
-.carousel-slide img {
+main .carousel .carousel-container .carousel-slide img {
     width: 100%;
-    height: 180px;
     object-fit: cover;
 }
 
-.indicators {
+main .carousel .indicators {
+    position: absolute;
+    bottom: .5rem;
+    left: 50%;
+    transform: translateX(-50%);
     display: flex;
     justify-content: center;
-    gap: 8px;
-    margin-top: 15px;
+    gap: .5rem;
 }
 
-.indicator {
-    width: 8px;
-    height: 8px;
-    background-color: rgba(255, 255, 255, 0.5);
+main .carousel .indicators .indicator {
+    width: .5rem;
+    height: .5rem;
+    background-color: var(--gray-200);
     border-radius: 50%;
 }
 
-.indicator.active {
-    background-color: #fff;
-    width: 24px;
-    border-radius: 4px;
+main .carousel .indicators .indicator.active {
+    background-color: var(--white);
+    width: 2.5rem;
+    border-radius: .25rem;
 }
 
 /* =========================================
    MEDIA QUERY - TABLETS E DESKTOPS
    ========================================= */
 @media (min-width: 768px) {
-    main, section {
-        padding: 0 5%;
+    main {
+        margin: 0 5%;
         max-width: 1200px;
         margin-left: auto;
         margin-right: auto;
     }
 
-    .carousel {
-        padding: 40px;
+    main .carousel .indicators {
+        bottom: 1rem;
+        gap: .5rem;
     }
 
-    .carousel-slide img {
-        height: 350px;
+    main .carousel .carousel-container .carousel-slide img {
+        height: 28rem;
     }
 }
