@@ -8,6 +8,10 @@ header {
     padding: 1.5rem 1rem 2rem;
 }
 
+.back-btn {
+    display: none;
+}
+
 .logo-header {
     display: flex;
     align-items: center;

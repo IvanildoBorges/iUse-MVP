@@ -2,6 +2,7 @@
 @import './main.css';
 @import './section.css';
 @import './footer.css';
+@import './search.css';
 
 *, 
 *::before, 
@@ -43,9 +44,16 @@ body,
 button,
 input,
 textarea {
+    font-size: 1rem;
     font-family: 'Nunito Sans', sans-serif;
     font-optical-sizing: auto;
     font-variation-settings: "wdth" 100, "YTLC" 500;
+}
+
+button:focus,
+input:focus,
+textarea:focus {
+    outline-color: var(--primary-color);
 }
 
 body {
@@ -93,6 +101,7 @@ section {
     align-items: center;
 }
 
+h2,
 .title-section {
     font-size: 1.125rem;
     font-weight: 700;
@@ -120,6 +129,7 @@ section {
         gap: 1rem;
     }
 
+    h2,
     .title-section {
         font-size: 1.25rem;
     }
