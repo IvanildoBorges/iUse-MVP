@@ -5,8 +5,70 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Acervo</title>
     <link rel="stylesheet" href="../styles/global.css">
+    <link rel="stylesheet" href="../styles/pages/acervo.css">
+
+    <!-- Base SEO -->
+    <meta name="description" content="iUse: A educação que circula entre todos. O iUse é uma plataforma que conecta doadores e beneficiários para a doação e distribuição de materiais escolares em bom estado, com foco em pessoas em situação de vulnerabilidade social." />
+    <meta name="keywords" content="iUse, educação, doação, materiais escolares, vulnerabilidade social" />
+
+    <!-- PWA -->
+    <meta name="theme-color" media="(prefers-color-scheme: light)" content="#130CED">
+
+    <!-- Typography -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <h2>Acervo</h2>
+    <header>
+        <div class="logo-header">
+            <img src="../assets/logotipo.png" alt="logotipo" class="logotipo">
+            <h1>iUse</h1>
+            <div class="user-box-info">
+                <p>Bem-vindo(a),</p>
+                <span class="user-name">Fulano</span>
+            </div>
+        </div>
+        <nav class="nav-header">
+            <ul>
+                <li><a href="../../index.html">Início</a></li>
+                <li><a href="./acervo.html" class="active">Acervo</a></li>
+                <li><a href="./minhas-reservas.html">Reservas</a></li>
+            </ul>
+        </nav>
+        <div class="actions-header">
+            <button class="btn-icon" aria-label="Buscar item">
+                <img src="../assets/search.png" alt="Buscar item">
+            </button>
+            <button class="btn-icon" aria-label="Notificações">
+                <img src="../assets/notifications.png" alt="Notificações">
+            </button>
+            <button class="btn-icon avatar" aria-label="Avatar">
+                <img src="../assets/avatar.png" alt="Avatar">
+            </button>
+        </div>
+    </header>
+    <section class="actions-section fast-access">
+        <div class="title-container-section">
+            <h2 class="title-section">Acervo</h2>
+        </div>
+    </section>
+    <footer>
+        <div class="footer-container">
+            <nav class="nav-footer">
+                <ul>
+                    <li><a href="../../index.html">Início</a></li>
+                    <li><a href="./acervo.html" class="active">Acervo</a></li>
+                    <li><a href="./buscar-item.html">Buscar</a></li>
+                    <li><a href="./minhas-reservas.html">Reservas</a></li>
+                    <li><a href="./perfil.html">Perfil</a></li>
+                </ul>
+            </nav>
+            <div class="copyright-footer">
+                <p>&copy; 2026 iUse. Todos os direitos reservados.</p>
+            </div>
+        </div>
+    </footer>
+    <script src="./src/scripts/script.js" type="module"></script>
 </body>
 </html>
