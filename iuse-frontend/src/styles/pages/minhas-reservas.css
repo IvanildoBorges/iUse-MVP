@@ -1,0 +1,599 @@
+:root {
+    --primary: #130CED;
+    --black: #1C1B1F;
+    --gray-700: #2C2C2C;
+    --gray-600: #464646;
+    --gray-400: #808080;
+    --gray-300: #D8D8D8;
+    --gray-100: #F1F1F1;
+    --white: #FFFFFF;
+    --danger: #E40040;
+    --desktop-header-height: 68px;
+    --bottom-nav-height: 82px;
+}
+
+* { box-sizing: border-box; }
+
+html, body {
+    min-height: 100%;
+    margin: 0;
+}
+
+body {
+    min-height: 100vh;
+    background: #fff;
+    color: var(--black);
+    font-family: "Nunito Sans", Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+}
+
+button, input, a { font-family: inherit; }
+button { border: 0; }
+a { color: inherit; text-decoration: none; }
+
+/* =========================================================
+    DESKTOP HEADER
+========================================================== */
+
+.desktop-header {
+    height: var(--desktop-header-height);
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 48px;
+    background: var(--white);
+    border-bottom: 1px solid var(--gray-100);
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: 700;
+}
+
+.logo-mark {
+    width: 40px;
+    height: 40px;
+    display: grid;
+    place-items: center;
+    border-radius: 50%;
+    background: var(--primary);
+}
+
+.logo-mark::after {
+    content: "";
+    width: 14px;
+    height: 14px;
+    border-radius: 50%;
+    background: white;
+}
+
+.desktop-nav {
+    display: flex;
+    align-items: center;
+    gap: 32px;
+    font-size: 14px;
+}
+
+.desktop-nav .active {
+    color: var(--primary);
+    font-weight: 700;
+}
+
+.header-actions {
+    display: flex;
+    align-items: center;
+    gap: 16px;
+}
+
+.header-icon {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+    background: transparent;
+    cursor: pointer;
+}
+
+.search-icon::before {
+    content: "";
+    width: 11px;
+    height: 11px;
+    border: 2px solid var(--black);
+    border-radius: 50%;
+}
+
+.search-icon::after {
+    content: "";
+    position: absolute;
+    width: 7px;
+    height: 2px;
+    background: var(--black);
+    transform: rotate(45deg);
+    right: 2px;
+    bottom: 5px;
+}
+
+.notification-icon::before {
+    content: "♧";
+    transform: rotate(180deg);
+    font-size: 22px;
+}
+
+.profile-icon {
+    border-radius: 50%;
+    overflow: hidden;
+    background: #ddd;
+}
+
+.profile-icon::before {
+    content: "👤";
+    display: grid;
+    place-items: center;
+    width: 100%;
+    height: 100%;
+    font-size: 14px;
+}
+
+/* =========================================================
+    MOBILE HEADER
+========================================================== */
+
+.mobile-header {
+    display: none;
+    height: 64px;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 16px;
+    background: white;
+}
+
+.mobile-back {
+    position: relative;
+    width: 32px;
+    height: 32px;
+    background: transparent;
+    cursor: pointer;
+}
+
+.mobile-back::before {
+    content: "";
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 9px;
+    height: 9px;
+    border-left: 2px solid var(--black);
+    border-bottom: 2px solid var(--black);
+    transform: rotate(45deg);
+}
+
+.mobile-title {
+    font-size: 16px;
+    font-weight: 700;
+}
+
+.mobile-notification {
+    position: relative;
+    width: 24px;
+    height: 24px;
+    background: transparent;
+}
+
+.mobile-notification::before {
+    content: "♧";
+    position: absolute;
+    inset: 0;
+    display: grid;
+    place-items: center;
+    transform: rotate(180deg);
+    font-size: 22px;
+}
+
+.notification-dot {
+    position: absolute;
+    top: 2px;
+    right: 1px;
+    width: 7px;
+    height: 7px;
+    border-radius: 50%;
+    background: var(--primary);
+}
+
+/* =========================================================
+    MAIN
+========================================================== */
+
+.main {
+    padding: 32px 54px 80px;
+}
+
+.page-title {
+    margin: 0 0 12px;
+    font-size: 24px;
+    line-height: 1.2;
+    font-weight: 800;
+    color: #000;
+}
+
+/* =========================================================
+    FILTROS
+========================================================== */
+
+.filters {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    margin-bottom: 32px;
+}
+
+.filter {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 32px;
+    padding: 8px 12px;
+    border-radius: 16px;
+    background: var(--gray-100);
+    color: var(--gray-600);
+    font-size: 12px;
+    line-height: 1;
+    font-weight: 700;
+    white-space: nowrap;
+    cursor: pointer;
+}
+
+.filter.active {
+    background: var(--primary);
+    color: white;
+}
+
+/* =========================================================
+    CARDS DESKTOP
+========================================================== */
+
+.reservations {
+    display: grid;
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+    gap: 16px;
+    max-width: 1500px;
+    margin: 0 auto;
+}
+
+.reservation-card {
+    min-width: 0;
+    min-height: 356px;
+    padding: 8px;
+    border: 1px solid var(--gray-300);
+    border-radius: 10px;
+    background: white;
+    box-shadow: 0 2px 3px rgba(0,0,0,.08);
+    transition: transform .2s ease, box-shadow .2s ease;
+}
+
+.reservation-card:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 6px 14px rgba(0,0,0,.10);
+}
+
+.reservation-card.completed {
+    opacity: .7;
+}
+
+.product-info {
+    display: grid;
+    grid-template-columns: 144px minmax(0,1fr);
+    align-items: center;
+    gap: 8px;
+    min-height: 144px;
+}
+
+.product-image {
+    width: 144px;
+    height: 144px;
+    display: grid;
+    place-items: center;
+    overflow: hidden;
+    border-radius: 9px;
+    background: var(--gray-100);
+}
+
+.product-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: contain;
+    border-radius: 9px;
+}
+
+.product-details {
+    min-width: 0;
+}
+
+.product-name {
+    margin: 0 0 4px;
+    color: var(--gray-700);
+    font-size: 16px;
+    line-height: 18px;
+    font-weight: 900;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.reservation-meta {
+    display: flex;
+    align-items: center;
+    gap: 4px;
+    color: var(--gray-400);
+    font-size: 11px;
+    line-height: 1;
+    font-weight: 600;
+    white-space: nowrap;
+}
+
+.separator {
+    height: 1px;
+    margin: 8px 0;
+    background: #eee;
+}
+
+.status-row {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    min-height: 48px;
+}
+
+.status-description {
+    flex: 1;
+    min-width: 0;
+    margin: 0;
+    color: var(--black);
+    font-size: 11px;
+    line-height: 1.25;
+    font-weight: 400;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-box-orient: vertical;
+}
+
+.status-chip {
+    flex-shrink: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 3px;
+    padding: 7px 10px;
+    min-height: 28px;
+    border-radius: 15px;
+    background: var(--gray-100);
+    font-size: 10px;
+    line-height: 14px;
+    font-weight: 900;
+    white-space: nowrap;
+}
+
+.status-pending { color: var(--primary); }
+.status-rejected { color: var(--danger); }
+.status-completed { color: var(--gray-600); }
+
+/* =========================================================
+    MOBILE BOTTOM NAV
+========================================================== */
+
+.bottom-nav {
+    display: none;
+    position: fixed;
+    z-index: 100;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    height: var(--bottom-nav-height);
+    align-items: flex-start;
+    justify-content: space-around;
+    padding: 16px 10px 18px;
+    background: white;
+    border-radius: 16px 16px 0 0;
+    box-shadow: 0 -2px 20px rgba(0,0,0,.18);
+}
+
+.bottom-nav-item {
+    width: 56px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 4px;
+    color: var(--black);
+    font-size: 10px;
+    font-weight: 600;
+}
+
+.bottom-nav-item.active {
+    color: var(--primary);
+    font-weight: 800;
+}
+
+.bottom-nav-icon {
+    width: 24px;
+    height: 24px;
+    display: grid;
+    place-items: center;
+    font-size: 21px;
+}
+
+/* =========================================================
+    MOBILE
+========================================================== */
+
+@media (max-width: 767px) {
+    .desktop-header {
+    display: none;
+    }
+
+    .mobile-header {
+    display: flex;
+    }
+
+    .main {
+    padding: 12px 13px calc(var(--bottom-nav-height) + 18px);
+    }
+
+    .page-title {
+    display: none;
+    }
+
+    .filters {
+    margin: 0 0 27px;
+    margin-right: -13px;
+    overflow-x: auto;
+    scrollbar-width: none;
+    padding-right: 13px;
+    }
+
+    .filters::-webkit-scrollbar {
+    display: none;
+    }
+
+    .filter {
+    flex-shrink: 0;
+    min-height: 28px;
+    padding: 7px 11px;
+    font-size: 11px;
+    }
+
+    .reservations {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+    max-width: none;
+    margin: 0;
+    }
+
+    .reservation-card {
+    min-height: auto;
+    padding: 8px 10px;
+    box-shadow: none;
+    }
+
+    .reservation-card:hover {
+    transform: none;
+    box-shadow: none;
+    }
+
+    .product-info {
+    grid-template-columns: 54px minmax(0,1fr);
+    min-height: 54px;
+    gap: 10px;
+    }
+
+    .product-image {
+    width: 54px;
+    height: 54px;
+    }
+
+    .product-name {
+    font-size: 13px;
+    line-height: 16px;
+    font-weight: 800;
+    }
+
+    .reservation-meta {
+    font-size: 10px;
+    }
+
+    .separator {
+    margin: 9px 0;
+    }
+
+    .status-row {
+    align-items: center;
+    gap: 8px;
+    min-height: 38px;
+    }
+
+    .status-description {
+    font-size: 10px;
+    line-height: 14px;
+    }
+
+    .status-chip {
+    padding: 6px 9px;
+    min-height: 27px;
+    font-size: 10px;
+    line-height: 13px;
+    }
+
+    .bottom-nav {
+    display: flex;
+    }
+}
+
+/* =========================================================
+    TABLET
+========================================================== */
+
+@media (min-width: 768px) and (max-width: 1200px) {
+    .main {
+    padding-left: 32px;
+    padding-right: 32px;
+    }
+
+    .reservations {
+    grid-template-columns: repeat(2, minmax(0,1fr));
+    }
+
+    .product-info {
+    grid-template-columns: 110px minmax(0,1fr);
+    }
+
+    .product-image {
+    width: 110px;
+    height: 110px;
+    }
+
+    .desktop-header {
+    padding-left: 32px;
+    padding-right: 32px;
+    }
+
+    .desktop-nav {
+    gap: 20px;
+    }
+}
+
+@media (max-width: 360px) {
+    .main {
+    padding-left: 12px;
+    padding-right: 12px;
+    }
+
+    .filters {
+    margin-right: -12px;
+    }
+
+    .product-info {
+    grid-template-columns: 52px minmax(0,1fr);
+    }
+
+    .product-image {
+    width: 52px;
+    height: 52px;
+    }
+
+    .status-row {
+    gap: 6px;
+    }
+
+    .status-chip {
+    padding-left: 7px;
+    padding-right: 7px;
+    }
+
+    .bottom-nav-item {
+    width: 48px;
+    }
+}
