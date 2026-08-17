@@ -20,7 +20,7 @@
     <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans:ital,opsz,wght@0,6..12,200..1000;1,6..12,200..1000&display=swap" rel="stylesheet">
 </head>
 <body>
-    <header>
+    <header class="desktop-header">
         <div class="logo-header">
             <img src="../assets/logotipo.png" alt="logotipo" class="logotipo">
             <h1>iUse</h1>
@@ -48,11 +48,238 @@
             </button>
         </div>
     </header>
-    <section class="actions-section fast-access">
-        <div class="title-container-section">
-            <h2 class="title-section">Minhas Reservas</h2>
-        </div>
-    </section>
+
+    <header class="mobile-header">
+
+      <button class="mobile-back" aria-label="Voltar"></button>
+
+      <strong class="mobile-title">
+        Minhas Reservas
+      </strong>
+
+      <button class="btn-icon" aria-label="Notificações">
+          <img src="../assets/notifications.png" alt="Notificações">
+      </button>
+
+    </header>
+
+    <!-- =======================================================
+         MAIN
+    ======================================================== -->
+
+    <main class="main">
+
+      <h1 class="page-title">
+        Minhas Reservas
+      </h1>
+
+
+      <div class="filters">
+
+        <button class="filter active" data-filter="all">
+          Todas
+        </button>
+
+        <button class="filter" data-filter="pending">
+          Pendentes
+        </button>
+
+        <button class="filter" data-filter="accepted">
+          Aceitas
+        </button>
+
+        <button class="filter" data-filter="rejected">
+          Recusadas
+        </button>
+
+        <button class="filter" data-filter="completed">
+          Concluídas
+        </button>
+
+      </div>
+
+
+      <section class="reservations">
+
+        <!-- Reserva 1 -->
+
+        <article class="reservation-card" data-status="pending">
+
+          <div class="product-info">
+
+            <div class="product-image">
+              <img
+                src="https://www.figma.com/api/mcp/asset/9fa6d154-a328-4dd6-9eed-f5540e0e7de9.png"
+                alt="Caderno Preto - Bom"
+              >
+            </div>
+
+            <div class="product-details">
+              <h2 class="product-name">
+                Caderno Preto - Bom
+              </h2>
+
+              <div class="reservation-meta">
+                <span>#RES00351</span>
+                <span>•</span>
+                <span>21 Mai 2026</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="status-row">
+
+            <p class="status-description">
+              Reserva realizada com sucesso. Aguardando confirmação do doador.
+            </p>
+
+            <div class="status-chip">
+              <span>Status:</span>
+              <span class="status-pending">Pendente</span>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- Reserva 2 -->
+
+        <article class="reservation-card" data-status="rejected">
+
+          <div class="product-info">
+
+            <div class="product-image">
+              <img
+                src="https://www.figma.com/api/mcp/asset/e30dfd0c-e9b2-4da2-861e-3f29b613f299.png"
+                alt="Caderno Laranja - Regular"
+              >
+            </div>
+
+            <div class="product-details">
+              <h2 class="product-name">
+                Caderno Laranja - Regular
+              </h2>
+
+              <div class="reservation-meta">
+                <span>#RES00353</span>
+                <span>•</span>
+                <span>20 Mai 2026</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="status-row">
+
+            <p class="status-description">
+              Reserva não confirmada. Doador recusou a reserva para este item.
+            </p>
+
+            <div class="status-chip">
+              <span>Status:</span>
+              <span class="status-rejected">Recusada</span>
+            </div>
+
+          </div>
+
+        </article>
+
+
+        <!-- Reserva 3 -->
+        <article class="reservation-card" data-status="pending">
+
+          <div class="product-info">
+
+            <div class="product-image">
+              <img
+                src="https://www.figma.com/api/mcp/asset/9fa6d154-a328-4dd6-9eed-f5540e0e7de9.png"
+                alt="Caderno Preto - Bom"
+              >
+            </div>
+
+            <div class="product-details">
+              <h2 class="product-name">
+                Caderno Preto - Bom
+              </h2>
+
+              <div class="reservation-meta">
+                <span>#RES00351</span>
+                <span>•</span>
+                <span>21 Mai 2026</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="status-row">
+
+            <p class="status-description">
+              Reserva realizada com sucesso. Aguardando confirmação do doador.
+            </p>
+
+            <div class="status-chip">
+              <span>Status:</span>
+              <span class="status-pending">Pendente</span>
+            </div>
+
+          </div>
+
+        </article>
+
+        <!-- Reserva 4 -->
+
+        <article class="reservation-card completed" data-status="completed">
+
+          <div class="product-info">
+
+            <div class="product-image">
+              <img
+                src="https://www.figma.com/api/mcp/asset/c21ee997-ab6a-48c6-8e0b-4e7b8014fc3b.png"
+                alt="Caderno Vermelho - Novo"
+              >
+            </div>
+
+            <div class="product-details">
+              <h2 class="product-name">
+                Caderno Vermelho - Novo
+              </h2>
+
+              <div class="reservation-meta">
+                <span>#RES00354</span>
+                <span>•</span>
+                <span>19 Mai 2026</span>
+              </div>
+            </div>
+
+          </div>
+
+          <div class="separator"></div>
+
+          <div class="status-row">
+
+            <p class="status-description">
+              Reserva concluída. Item retirado.
+            </p>
+
+            <div class="status-chip">
+              <span>Status:</span>
+              <span class="status-completed">Concluída</span>
+            </div>
+
+          </div>
+
+        </article>
+
+      </section>
+
+    </main>
     <footer>
         <div class="footer-container">
             <nav class="nav-footer">
