@@ -1,36 +1,3 @@
-:root {
-    --primary: #130CED;
-    --black: #1C1B1F;
-    --gray-700: #2C2C2C;
-    --gray-600: #464646;
-    --gray-400: #808080;
-    --gray-300: #D8D8D8;
-    --gray-100: #F1F1F1;
-    --white: #FFFFFF;
-    --danger: #E40040;
-    --desktop-header-height: 68px;
-    --bottom-nav-height: 82px;
-}
-
-* { box-sizing: border-box; }
-
-html, body {
-    min-height: 100%;
-    margin: 0;
-}
-
-body {
-    min-height: 100vh;
-    background: #fff;
-    color: var(--black);
-    font-family: "Nunito Sans", Arial, sans-serif;
-    -webkit-font-smoothing: antialiased;
-}
-
-button, input, a { font-family: inherit; }
-button { border: 0; }
-a { color: inherit; text-decoration: none; }
-
 /* =========================================================
     DESKTOP HEADER
 ========================================================== */
