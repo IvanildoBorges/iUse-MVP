@@ -81,12 +81,12 @@
                 </div>
                 <span class="text-card-icon">Ponto de coleta</span>
             </div>
-            <div class="card-icon">
+            <a class="card-icon" href="#formulario-doacao">
                 <div class="img-container">
                     <img src="./src/assets/box.png" alt="Doar material">
                 </div>
                 <span class="text-card-icon">Doar material</span>
-            </div>
+            </a>
             <div class="card-icon search-btn">
                 <div class="img-container">
                     <img src="./src/assets/search.png" alt="Buscar material">
@@ -95,6 +95,42 @@
             </div>
         </div>
     </section>
+    <section class="secao-doacao" id="formulario-doacao" aria-labelledby="titulo-doacao" hidden>
+        <button class="fechar-doacao" type="button" aria-label="Fechar formulário de doação">×</button>
+        <div class="cabecalho-doacao">
+            <span class="section-kicker">Participe do iUse</span>
+            <h2 id="titulo-doacao">Quero doar material escolar</h2>
+        </div>
+        <form id="formulario-interesse" novalidate>
+            <div class="campo-formulario">
+                <label for="nome-doador">Nome completo</label>
+                <input type="text" placeholder="Fulano de Tal" id="nome-doador" name="nome" autocomplete="name" required>
+            </div>
+            <div class="campo-formulario">
+                <label for="email-doador">E-mail</label>
+                <input type="email" placeholder="fulano@exemplo.com" id="email-doador" name="email" autocomplete="email" required>
+            </div>
+            <div class="campo-formulario">
+                <label for="tipo-material">Material que deseja doar</label>
+                <select id="tipo-material" name="material" required>
+                    <option value="">Selecione uma opção</option>
+                    <option value="cadernos">Cadernos</option>
+                    <option value="livros">Livros</option>
+                    <option value="mochilas">Mochilas</option>
+                    <option value="outros">Outros materiais escolares</option>
+                </select>
+            </div>
+            <div class="campo-formulario">
+                <label for="mensagem-doacao">Mensagem <span>(opcional)</span></label>
+                <textarea id="mensagem-doacao" name="mensagem" rows="4" placeholder="Conte um pouco sobre os materiais"></textarea>
+            </div>
+            <button class="envio-doacao" type="submit">Enviar interesse</button>
+            <p class="retorno-formulario" role="status" aria-live="polite"></p>
+        </form>
+    </section>
+    <button class="botao-chat-doacao" type="button" aria-label="Abrir formulário de doação">
+        <span aria-hidden="true">💬</span>
+    </button>
     <section class="actions section recently-added">
         <div class="title-container-section">
             <h2 class="title-section">Recém adicionados</h2>
@@ -191,6 +227,6 @@
             </div>
         </div>
     </footer>
-    <script src="./src/scripts/script.js" type="module"></script>
+    <script src="./src/scripts/script.js?v=7" type="module"></script>
 </body>
 </html>

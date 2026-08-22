@@ -3,6 +3,7 @@
 @import './section.css';
 @import './footer.css';
 @import './search.css';
+@import './form-interesse.css';
 
 *, 
 *::before, 
@@ -59,7 +60,7 @@ textarea:focus {
 body {
     background-color: var(--bg-color);
     color: var(--gray-700);
-    width: 100vw;
+    width: 100%;
     overflow-x: hidden;
     padding-bottom: 4rem;
 }
