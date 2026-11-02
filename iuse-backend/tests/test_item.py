@@ -86,7 +86,7 @@ def test_estado_conservacao_invalido():
             nome="Mochila Escolar Infantil",
             categoria=TipoItem.MOCHILA,
             descricao="Mochila escolar de rodinhas",
-            estado_conservacao="EXCELENTE",  # Estado inválido
+            estado_conservacao="EXCELENTE",  # Estado inválido # type: ignore
             id_ponto_coleta=1,
             id_doador="550e8400-e29b-41d4-a716-446655440000"
         )
@@ -96,7 +96,7 @@ def test_tipo_invalido():
     with pytest.raises(ValueError, match="Tipo inválido para o item!"):
         Item(
             nome="Mochila Escolar",
-            categoria="MATERIAL_DE_ARTE",  # Tipo inválido
+            categoria="MATERIAL_DE_ARTE",  # Tipo inválido # type: ignore
             descricao="Mochila escolar de rodinhas",
             estado_conservacao=EstadoConservacao.BOM,
             id_ponto_coleta=1,
