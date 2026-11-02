@@ -32,8 +32,26 @@ A arquitetura de software corresponde à forma como um sistema é organizado, de
 A aplicação pode ser executada em qualquer navegador moderno. Para executar a aplicação recomendamos que use o Visual Studio Code (VS Code), com o plugin Live Server (pois nosso MVP, na parte do frontend, foi estruturado para usar somente HTML, CSS e JS, sem nenhum auxílio de framework ou bibliotecas, visando a linha de aprendizado maior para alguns membros da equipe - Ficando restrito para um próximo módulo adaptar para a stack React). Com o plugin instalado, basta clicar com direito encima do arquivo index.html e clicar em "Open with Live Server", irá ser redirecionado para o navegador com o site já aberto.
 O sistema iUse busca aproximar doações a quem precisa, incentivando a economia circular ao promover o reaproveitamento de recursos educacionais pessoas em situação de vulnerabilidade socioeconômica. Como exemplo, jovens de perférias e escolas com pouco investimento público, podem usar o sistema para procurar itens em bom estado.
 
-### 7. [PREENCHER ESSA PARTE!!!!!!!!!!!!]
+### 7. O que é Integração Contínua (CI) e como ela funciona no iUse?
 
+**O que é?** Integração Contínua é o ato de enviar pequenas mudanças de código e verificar automaticamente cada envio se o código roda, os testes passam e o projeto consegue ser empacotado (no caso do iUse).
+
+**Por que isso importa para quem está aprendendo a programar?** A CI mostra falhas no processo de desenvolvimento logo após elas acontecerem, quando ainda é fácil entender e corrigir (como os erros de sintaxe). Com a CI, o estudante tem sua aplicação isolada em um ambiente limpo e padronizado (a máquina virtual do GitHub), o que dá segurança para trabalhar em equipe, pois reduz o risco de incompatibilidade entre máquinas e servidores diferentes. Ela também incentiva a escrever testes, o que traz a segurança de saber que um novo commit não quebrou algo que já funcionava.
+
+**Como a CI foi configurada no iUse.** Utilizamos no iUse o **GitHub Actions**. A configuração fica no arquivo `.github/workflows/ci-pipeline.yml` e é chamada automaticamente a cada **push** ou **pull request** na branch `main`. O pipeline roda em uma máquina virtual Ubuntu e valida o backend (pasta `iuse-backend`), executando as etapas abaixo, em ordem:
+
+| # | Etapa | O que faz |
+|---|-------|-----------|
+| 1 | Checkout | Baixa o código do repositório para a máquina virtual |
+| 2 | Configurar Python | Instala a versão do Python usada pelo projeto |
+| 3 | Instalar dependências | Atualiza o `pip` e instala o `requirements.txt` |
+| 4 | Lint (Flake8) | Procura erros graves, como falhas de sintaxe e nomes não definidos |
+| 5 | Testes (Pytest) | Executa os testes automatizados da pasta `tests/` |
+| 6 | Build do Docker | Confirma que a imagem do backend é construída sem erros |
+
+Se qualquer etapa falhar, as seguintes não são executadas e o pipeline é marcado como reprovado. A ordem é intencional: as verificações mais rápidas vêm primeiro e a mais pesada (o build do Docker) vem por último, para o feedback chegar logo.
+
+**Como ver o resultado.** Acesse a aba **Actions** do repositório no GitHub. Um ✅ verde indica que tudo passou. Um ❌ vermelho indica falha. Clique na execução para ver o log de cada etapa e descobrir onde o erro ocorreu.
 
 ## Protótipos
 Como demostração, aqui estão os dois protótipos navegáveis Figma do MVP: 
@@ -49,7 +67,7 @@ Como demostração, aqui estão os dois protótipos navegáveis Figma do MVP:
 Este projeto utiliza ```Python 3``` e faz uso de um ambiente virtual ```(venv)``` para garantir o isolamento das dependências e a reprodutibilidade do ambiente de desenvolvimento.
 
 **1. Requisitos:**
-- **Python 3.10+** (recomendado)
+- **Python 3.11+** (recomendado)
 - ```pip``` (gerenciador de pacotes do Python)
 
 **2. Criação do ambiente virtual**
