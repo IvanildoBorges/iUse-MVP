@@ -55,6 +55,7 @@ Este projeto utiliza ```Python 3``` e faz uso de um ambiente virtual ```(venv)``
 **2. Criação do ambiente virtual**
 Na raiz do projeto, execute:
 ```bash
+cd iuse-backend
 python -m venv venv
 ```
 
