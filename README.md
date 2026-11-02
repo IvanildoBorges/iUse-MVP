@@ -32,6 +32,8 @@ A arquitetura de software corresponde à forma como um sistema é organizado, de
 A aplicação pode ser executada em qualquer navegador moderno. Para executar a aplicação recomendamos que use o Visual Studio Code (VS Code), com o plugin Live Server (pois nosso MVP, na parte do frontend, foi estruturado para usar somente HTML, CSS e JS, sem nenhum auxílio de framework ou bibliotecas, visando a linha de aprendizado maior para alguns membros da equipe - Ficando restrito para um próximo módulo adaptar para a stack React). Com o plugin instalado, basta clicar com direito encima do arquivo index.html e clicar em "Open with Live Server", irá ser redirecionado para o navegador com o site já aberto.
 O sistema iUse busca aproximar doações a quem precisa, incentivando a economia circular ao promover o reaproveitamento de recursos educacionais pessoas em situação de vulnerabilidade socioeconômica. Como exemplo, jovens de perférias e escolas com pouco investimento público, podem usar o sistema para procurar itens em bom estado.
 
+### 7. [PREENCHER ESSA PARTE!!!!!!!!!!!!]
+
 
 ## Protótipos
 Como demostração, aqui estão os dois protótipos navegáveis Figma do MVP: 
@@ -93,13 +95,51 @@ pip install -r requirements.txt
 
 *As dependências são instaladas **exclusivamente no ambiente virtual**, não afetando o Python global do sistema.*
 
-**5. Execução do sistema**
+**5. Execução com Docker**
+
+O projeto também pode ser executado em um contêiner Docker. Antes de começar,
+instale o [Docker Desktop](https://www.docker.com/products/docker-desktop/)
+e confirme que ele está em execução.
+
+Como o `Dockerfile` está localizado em `iuse-backend/`, execute os comandos a
+partir dessa pasta:
+
+```bash
+cd iuse-backend
+docker build -t iuse-mvp:latest .
+```
+
+Depois, inicie o contêiner em modo interativo para utilizar a aplicação pela
+linha de comando:
+
+```bash
+docker run --rm -it --name iuse-mvp iuse-mvp:latest
+```
+
+O parâmetro `--rm` remove o contêiner ao final da execução, enquanto `-it`
+mantém a interação com o terminal. Para interromper a aplicação, pressione
+`Ctrl+C`.
+
+Se o contêiner tiver sido iniciado sem `--rm` e estiver em execução em outro
+terminal, consulte os contêineres ativos e pare-o com:
+
+```bash
+docker ps
+docker stop iuse-mvp
+```
+
+> **Observação:** esta versão do projeto executa um sistema de linha de
+> comando. Por isso, não é necessário publicar uma porta com `-p`, como seria
+> necessário em uma aplicação web ou API. Para executar o frontend, siga as
+> instruções da seção [Como utilizar a aplicação](#6-como-utilizar-a-aplicação).
+
+**6. Execução do sistema**
 Com o ambiente configurado, execute:
 ```bash
 python main.py
 ```
 
-**6. Para execução dos testes**
+**7. Para execução dos testes**
 Os testes automatizados estão localizados na pasta ```tests/``` e podem ser executados com:
 ```bash
 pytest
