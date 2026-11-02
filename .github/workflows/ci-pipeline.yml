@@ -18,9 +18,9 @@ jobs:
         working-directory: iuse-backend
     steps:
       - name: 1. Baixar o codigo fonte (Checkout)
-        uses: actions/checkout@v3
+        uses: actions/checkout@v4
       - name: 2. Configurar o ambiente Python
-        uses: actions/setup-python@v4
+        uses: actions/setup-python@v5
         with:
           python-version: '3.14'
       - name: 3. Instalar dependencias
@@ -35,4 +35,4 @@ jobs:
           pytest -v
       - name: 6. Testar o Build do Docker
         run: |
-          docker build -f ../Dockerfile -t iuse-backend .
+          docker build -t iuse-backend .

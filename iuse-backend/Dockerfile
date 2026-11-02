@@ -10,7 +10,7 @@ ENV PYTHONDONTWRITEBYTECODE=1 \
     PYTHONUNBUFFERED=1
 
 # Copia apenas o arquivo de dependências primeiro (otimização de cache do Docker)
-COPY /requirements.txt .
+COPY requirements.txt .
 
 # Instala as dependências
 RUN pip install --no-cache-dir -r requirements.txt
