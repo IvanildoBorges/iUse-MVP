@@ -20,7 +20,7 @@ def item_mochila_escolar():
 # ========= TESTES DE CRIAÇÃO =========
 def test_criar_item_com_dados_validos(item_mochila_escolar):
     """Teste de criação de item com dados válidos"""
-    assert item_mochila_escolar.nome == "Mochila Escolar Infantil"
+    assert item_mochila_escolar.nome == "Mochila 2"
     assert item_mochila_escolar.descricao == "Mochila escolar de rodinhas, com alças acolchoadas, em tecido resistente"
     assert item_mochila_escolar.estado_conservacao == EstadoConservacao.BOM
     assert item_mochila_escolar.disponibilidade == Disponibilidade.DISPONIVEL
