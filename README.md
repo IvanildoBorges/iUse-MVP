@@ -33,12 +33,9 @@ A aplicação pode ser executada em qualquer navegador moderno. Para executar a 
 O sistema iUse busca aproximar doações a quem precisa, incentivando a economia circular ao promover o reaproveitamento de recursos educacionais pessoas em situação de vulnerabilidade socioeconômica. Como exemplo, jovens de perférias e escolas com pouco investimento público, podem usar o sistema para procurar itens em bom estado.
 
 ### 7. O que é Integração Contínua (CI) e como ela funciona no iUse?
+Integração Contínua é o ato de enviar pequenas mudanças de código e verificar automaticamente cada envio se o código roda, os testes passam e o projeto consegue ser empacotado (no caso do iUse). Sua importância se dá em mostrar falhas no processo de desenvolvimento logo após elas acontecerem, quando ainda é fácil entender e corrigir (como os erros de sintaxe). Com a CI, o estudante tem sua aplicação isolada em um ambiente limpo e padronizado (a máquina virtual do GitHub), o que dá segurança para trabalhar em equipe, pois reduz o risco de incompatibilidade entre máquinas e servidores diferentes. Ela também incentiva a escrever testes, o que traz a segurança de saber que um novo commit não quebrou algo que já funcionava.
 
-**O que é?** Integração Contínua é o ato de enviar pequenas mudanças de código e verificar automaticamente cada envio se o código roda, os testes passam e o projeto consegue ser empacotado (no caso do iUse).
-
-**Por que isso importa para quem está aprendendo a programar?** A CI mostra falhas no processo de desenvolvimento logo após elas acontecerem, quando ainda é fácil entender e corrigir (como os erros de sintaxe). Com a CI, o estudante tem sua aplicação isolada em um ambiente limpo e padronizado (a máquina virtual do GitHub), o que dá segurança para trabalhar em equipe, pois reduz o risco de incompatibilidade entre máquinas e servidores diferentes. Ela também incentiva a escrever testes, o que traz a segurança de saber que um novo commit não quebrou algo que já funcionava.
-
-**Como a CI foi configurada no iUse.** Utilizamos no iUse o **GitHub Actions**. A configuração fica no arquivo `.github/workflows/ci-pipeline.yml` e é chamada automaticamente a cada **push** ou **pull request** na branch `main`. O pipeline roda em uma máquina virtual Ubuntu e valida o backend (pasta `iuse-backend`), executando as etapas abaixo, em ordem:
+A CI foi configurada no iUse por meio do **GitHub Actions**. A configuração fica no arquivo `.github/workflows/ci-pipeline.yml` e é chamada automaticamente a cada **push** ou **pull request** na branch `main`. O pipeline roda em uma máquina virtual Ubuntu e valida o backend (pasta `iuse-backend`), executando as etapas abaixo, em ordem:
 
 | # | Etapa | O que faz |
 |---|-------|-----------|
